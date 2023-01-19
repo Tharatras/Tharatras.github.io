@@ -1,0 +1,323 @@
+* {       /* (*)bu html degi hamma teg. Botta hamma tegdan avtomaticheskiy qoyiladigan stillarini 
+    yoqotish qilivotti */
+  padding: 0;
+  margin: 0;
+ 
+}
+
+
+
+@media (min-width: 438px){
+    .about{
+
+    }
+}
+
+header{
+position: fixed; 
+width: 99%;
+background-color: rgb(36, 35, 35);
+
+padding: 20px 0.5% 20px 0.5%;
+ border-radius: 0 0 15px 15px; 
+box-shadow: 5px 5px 15px;
+box-shadow: rgb(0, 0, 0); 
+/* background: transparent; */
+display: flex;
+justify-content: center;
+}
+
+.logo{
+display: inline-block;
+font-size: 25px;
+font-family: Roboto, Arial, sans-serif;
+            
+            background-color: #2AA5A0;
+            background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    width: 0 0 10px 0;
+    margin-top: 19px;
+    margin-left: 150px;
+}
+
+.about{
+padding: 10px;
+display: inline-block;
+float: right;
+width: 50%;
+
+}
+.about>a:not(:last-child){
+    margin-right: 17%;
+}
+
+a{
+    text-decoration: none;
+    font-family: Roboto, Arial, sans-serif;
+            
+            background-color: #2AA5A0;
+            background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+}
+.text{
+    
+    margin-top: 22px;
+    float: right;
+    margin-right: 5%;
+    border-radius: 5px;
+    border-color: rgb(0, 0, 0);
+    height: 20px;
+    border-color: #6a2aa5;
+    background-color: #505053;
+}
+.buttonn{
+    margin-top: 11px;
+    float: right;
+    margin-right: 5px;
+    /* border-radius: 9px; */
+    border: none;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(36, 35, 35);
+    /* border-color: #6a2aa5; */
+    background-image: url(rut.png);
+    background-size: cover;
+    /* box-shadow: 0px 0px 1px 3px #384696; */
+}
+button:hover{
+    
+    /* box-shadow: 1px 0px 10px 3px #963896; */
+    
+}
+body{
+height: 100vh;  
+}
+input:hover{
+    
+    box-shadow: 0px 0px 10px 3px #384696;
+    
+}
+input:active{
+    
+    box-shadow: 0px 0px 1px 3px #384696;
+    
+}
+a:hover{
+    
+    font-size: 25px;
+}
+
+.topmenu::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.topmenu > li {
+    width: 25%;
+    float: left;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.topmenu > li a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #963896;
+    padding: 15px 30px;
+}
+
+.topmenu li a:hover{color: #384696; font-size: 13.5px;}
+
+
+.submenu-link::after{
+    content: "\f107";
+    font-family: "FontAwesome";
+    color: inherit;
+    margin-left: 10px;
+}
+
+.submenu{
+    margin-top: 30px;
+    background: #080808;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    width: 180px;
+    opacity: 0;
+    transform: scaleY(0);
+      transition: .5s ease-in-out;
+}
+
+.submenu a{
+    color: beige;
+    text-align: left;
+    padding: 12px 25px;
+    font-size: 13px;
+    border-bottom: 1px solid rgb(43, 4, 4);
+}
+
+.submenu li:last-child a{ border-bottom: none;}
+.topmenu > li:hover .submenu {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+header a{
+    text-decoration: none;
+    display: block;
+    outline: none;
+    transition: .3s ease-in-out;
+}
+
+nav{
+    display: table;
+    margin: 0 auto;
+}
+
+nav ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.head{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main{
+    flex: 1 1 auto;
+
+}
+.footer{
+    
+    background: rgb(36, 35, 35);
+    text-align: center;
+    padding: 30px;
+    
+}
+.rak{
+    font-size: large;
+    font-family: "FontAwesome";
+    text-decoration: none;
+            background-color: #2AA5A0;
+            background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+}
+.puw{
+    background-blend-mode: multiply;
+    padding-top: 20%;
+    text-align: center;
+    /* background-image: url(1.jpg); */
+    background-image: url(https://img2.akspic.ru/previews/7/7/2/8/6/168277/168277-nyu_jork-manhetten-zdanie-oblako-atmosfera-x750.jpg);
+    background-color: rgba(134, 95, 172, 0.637);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    color: #222221;
+    font-size: 5em;
+}
+ .luck{
+
+    padding: 100px 20%;
+    float: left;
+    width: 60%;
+    background-color: aliceblue;
+    border-top: 2px solid silver;
+    color: #505053;
+    font-size: 1.3em;
+ }
+.luck div{
+    width: 45%;
+    margin-right: 5%;
+    float: left;
+}
+.trust{
+    /* background: ;     */
+    background: rgb(23, 125, 165) ;
+    height: 500px;
+    
+    
+    /* background-image: url(qwe.jpg); */
+    /* background: url(qwe.jpg) 50% 50% no-repeat fixed ; /* top-left/ top-right / center /
+     bottom-right bottom-left */
+    /*px va % lani ishlatsa boladi */
+    background: url(https://img3.akspic.ru/previews/4/2/9/7/6/167924/167924-amsterdam-voda-velosiped-koleso-zdanie-x750.jpg) fixed; /* center/50% 50% no-repeat fixed */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+
+}
+
+.DIT{
+    margin-right: 200px;
+    margin-top: 23px;
+}
+.ss:focus{
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    height: 25px;
+    width: 150px;
+    transition: .3s ease-in-out;
+}
+.cc{
+    background-color: gray ;
+    border: none;
+    width: 55px;
+    height: 25px;
+    border-radius: 5px;
+}
+.cc:hover{
+    background-color:   #50504f;
+    color: yellow;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+.cc:focus{
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+.list li:first-child{
+    color: red;
+    font-weight: 700;
+}
+.list li:last-child{
+    color: green;
+}
+.list li:nth-child(4){   /* even and odd*/
+color: yellow;
+text-decoration: underline;
+}
+.ss{
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+}
+.ss:active{
+    width: 150px;
+}
+.ss:hover{
+    width: 150px;
+    transition: .3s ease-in-out;
+}
+.list li::before{
+    content: '';
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+.list li:hover:before{
+    background-color: aqua;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+}

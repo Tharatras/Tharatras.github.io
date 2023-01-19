@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="wes.less">
+<style>
+    
+</style>
+
+</head>
+
+
+<body>
+
+
+    <div class="cntr">
+        <div class="cntr-innr">
+          <label class="search" for="inpt_search">
+            <input id="inpt_search" type="text" />
+          </label>
+          <p>Hover to see the magic.</p>
+        </div>
+      </div>
+      <script>
+        $("#inpt_search").on('focus', function () {
+            $(this).parent('label').addClass('active');
+          });
+          
+          $("#inpt_search").on('blur', function () {
+            if($(this).val().length == 0)
+              $(this).parent('label').removeClass('active');
+          });
+      </script>
+
+</body>
+</html>
